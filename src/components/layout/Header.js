@@ -9,7 +9,7 @@ export const Header = () => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
               <Link to='/' className="flex items-center">
-                  <img src={Logo} className="h-12 mr-3" alt="eBook Logo" />
+                  <img src={Logo} className="h-10 mr-3" alt="eBook Logo" />
               </Link>
               <div className="flex items-center">
                   <span className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-gear-wide-connected"></span>
@@ -23,7 +23,7 @@ export const Header = () => {
               </div>
           </div>
       </nav>
-      <div className="border-b "></div>
+      <div className="border-b py-0.5 mx-auto max-w-screen-xl"></div>
 
     </header>
   )
