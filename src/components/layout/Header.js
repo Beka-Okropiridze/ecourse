@@ -23,7 +23,7 @@ export const Header = () => {
               </div>
           </div>
       </nav>
-      <div className="border-b py-0.5 mx-auto max-w-screen-xl"></div>
+      <div className="border-b py-0.5 mx-auto max-w-full"></div>
 
     </header>
   )

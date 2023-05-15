@@ -1,10 +1,21 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { ProductCard } from "../../components/Elements/ProductCard"
 import { FilterBar } from "./productscomponents/FilterBar"
 
 export const ProductList = () => {
 
   const [show, setShow] = useState(false)
+
+  const [products, setProducts] = useState([])
+
+  useEffect(() => { 
+    async function fetchProducts () { 
+      const response = await fetch("http://localhost:8000/products")
+      const data = await response.json()
+      setProducts(data)
+    }
+    fetchProducts()
+  }, [])
 
   return (
     <main>
@@ -18,8 +29,12 @@ export const ProductList = () => {
           </span>
         </div>
 
-        <div className="flex flex-wrap justify-center lg:flex-row">
-          <ProductCard />
+        <div className="flex flex-wrap justify-between lg:flex-row">
+          {
+            products.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))
+          }
         </div>
       </section>
 
