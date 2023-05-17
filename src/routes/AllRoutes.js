@@ -6,9 +6,9 @@ export const AllRoutes = () => {
   return (
     <>
      <Routes>
-        <Route path='' element={<HomePage />} />
-        <Route path='/products' element={<ProductList />} />
-        <Route path='/products/:id' element={<ProductDetail />} />
+        <Route path='' element={<HomePage title='eBook App' />} />
+        <Route path='/products' element={<ProductList title='All eBooks' />} />
+        <Route path='/products/:id' element={<ProductDetail title='About eBook' />} />
      </Routes>
     </>
   )

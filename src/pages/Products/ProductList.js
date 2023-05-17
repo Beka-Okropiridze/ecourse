@@ -2,8 +2,11 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { ProductCard } from "../../components";
 import { FilterBar } from "./productscomponents/FilterBar";
+import { useTitle } from "../../hooks/useTitle";
 
-export const ProductList = () => {
+export const ProductList = ({title}) => {
+
+  useTitle(title)
 
   const [show, setShow] = useState(false)
 
@@ -21,7 +24,7 @@ export const ProductList = () => {
       setProducts(data)
     }
     fetchProducts()
-  }, [])
+  }, [searchTerm])
 
   return (
     <main>

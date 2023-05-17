@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import { Raiting } from "../components";
+import { useTitle } from "../hooks/useTitle";
 
 
 
-export const ProductDetail = () => {
+export const ProductDetail = ({title}) => {
+
+    useTitle(title)
 
     const [product, setProduct] = useState({});
 
