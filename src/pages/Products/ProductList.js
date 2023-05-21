@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { ProductCard } from "../../components";
 import { FilterBar } from "./productscomponents/FilterBar";
 import { useTitle } from "../../hooks/useTitle";
+import { useFilter } from "../../context";
 
 export const ProductList = ({title}) => {
 
@@ -10,7 +11,7 @@ export const ProductList = ({title}) => {
 
   const [show, setShow] = useState(false)
 
-  const [products, setProducts] = useState([])
+  const { products, initialProductList } = useFilter()
 
   const search = useLocation().search
 
@@ -21,7 +22,7 @@ export const ProductList = ({title}) => {
     async function fetchProducts () { 
       const response = await fetch(`http://localhost:8000/products?name_like=${searchTerm ? searchTerm : ''}`)
       const data = await response.json()
-      setProducts(data)
+      initialProductList(data)
     }
     fetchProducts()
   }, [searchTerm])
