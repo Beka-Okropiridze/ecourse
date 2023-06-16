@@ -11,7 +11,7 @@ export const ProductList = ({title}) => {
 
   const [show, setShow] = useState(false)
 
-  const { products, initialProductList } = useFilter()
+  const { products, initialProductList } = useFilter();
 
   const search = useLocation().search
 
