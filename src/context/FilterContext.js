@@ -64,7 +64,9 @@ export const FilterProvider = ({children}) => {
     const filteredProductList = rating(sort(inStock(bestSeller(state.productlist))));
 
     const value = { 
-        products: state.productlist,
+        state,
+        dispatch,
+        products: filteredProductList,
         initialProductList,
     }
 
