@@ -23,7 +23,7 @@ export const FilterBar = ({setShow}) => {
                           <label htmlFor="price-sort-1" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Price - Low to High</label>
                       </div>
                       <div className="flex items-center my-1">
-                          <input onChange={() => dispatch({type: "SORT_BY", payload: {sortBY: "hightolow"}})} checked={state.sortBY === "hightolow" || false} id="price-sort-2" type="radio" value="" name="price-sort" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
+                          <input onChange={() => dispatch({type: "SORT_BY", payload: {sortBy: "hightolow"}})} checked={state.sortBy === "hightolow" || false} id="price-sort-2" type="radio" value="" name="price-sort" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
                           <label htmlFor="price-sort-2" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Price - High to Low</label>
                       </div>
                     </li>
@@ -58,11 +58,11 @@ export const FilterBar = ({setShow}) => {
                       </div>
                     </li>
                     <li className="mt-1 mb-5 px-1">
-                      <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-10 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Clear Filter</button>
+                      <button onClick={() => dispatch({type: "CLEAR_FILTER"})} type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-10 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Clear Filter</button>
                     </li>
                   </ul>
               </div>
           </div>                   
       </section>
     )
-  }
+  };

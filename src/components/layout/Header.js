@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Logo from '../../logo/Logo.png';
 import { Search } from "../Sections/Search";
+// import { DropDownLogIn } from "../Elements/DropDownLogIn";
+import { DropDownLogOut } from "../Elements/DropDownLogOut";
 
 
 export const Header = () => {
@@ -9,6 +11,8 @@ export const Header = () => {
   const [mode, setMode] = useState(JSON.parse(localStorage.getItem("darkMode")) || false);
 
   const [search, setSearchSection] = useState(false);
+
+  const [dropDown, setDropDown] = useState(false);
 
 
   useEffect(() => { 
@@ -29,7 +33,7 @@ export const Header = () => {
               <Link to='/' className="flex items-center">
                   <img src={Logo} className="h-10 mr-3" alt="eBook Logo" />
               </Link>
-              <div className="flex items-center">
+              <div className="flex items-center relative">
                   <span onClick={() => setMode(!mode)} className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-gear-wide-connected"></span>
                   <span onClick={() => setSearchSection(!search)}  className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-search"></span>
                   <Link to="/cart" className="text-gray-700 dark:text-white mr-5">
@@ -37,11 +41,12 @@ export const Header = () => {
                       <span className="text-white text-sm absolute -top-1 left-2.5 bg-rose-500 px-1 rounded-full ">0</span>
                     </span>                    
                   </Link>
-                  <span className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-person-circle"></span>
+                  <span onClick={() => setDropDown(!dropDown)} className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-person-circle"></span>
+                  { dropDown && <DropDownLogOut />}
               </div>
           </div>
       </nav>
-      <div className="border-b mx-auto max-w-full"></div>
+      {/* <div className="border-b mx-auto max-w-full"></div> */}
       { search && <Search setSearchSection={setSearchSection} />}
 
     </header>
