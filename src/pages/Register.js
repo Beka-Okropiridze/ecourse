@@ -1,7 +1,9 @@
-
-
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 export const Register = () => {
+
+    const navigate = useNavigate();
 
     async function handleRegister(event) { 
         event.preventDefault();
@@ -18,6 +20,7 @@ export const Register = () => {
         });
 
         const data = await response.json();
+        data.accessToken ? navigate("/products") : toast.error(data)
         console.log(data);
 
     }

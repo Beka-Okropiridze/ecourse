@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import ReactDOM from 'react-dom/client';
 import { ScrollToTop } from './components';
 import { FilterProvider } from './context';
@@ -11,6 +13,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <FilterProvider>
+        <ToastContainer autoClose={3000}/>
         <ScrollToTop />
         <App />
       </FilterProvider>

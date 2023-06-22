@@ -427,6 +427,18 @@
       "password": "$2a$10$R2G8epPSldCQe82AZoitLO7t8QJerHYLc2aifEvx5KUDMfN6XTtwC",
       "name": "beqa",
       "id": 4
+    },
+    {
+      "email": "eve.holt@reqres.in",
+      "password": "$2a$10$..Mb1SjFHZiH7pLzqKePle4h.C2r61atZQEo6Ct54rVtMcE/YIlr2",
+      "name": "kaxa",
+      "id": 5
+    },
+    {
+      "email": "beqa.oqropiridze1994@gmail.com",   
+      "password": "$2a$10$2WuIAdMWJAIvJutbb8fLnuiDvgFhauA93TMPGg8hPVQVcGETNsw82",
+      "name": "beka",
+      "id": 6
     }
   ]
 }
