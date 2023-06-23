@@ -2,17 +2,17 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Logo from '../../logo/Logo.png';
 import { Search } from "../Sections/Search";
-// import { DropDownLogIn } from "../Elements/DropDownLogIn";
+import { DropDownLogIn } from "../Elements/DropDownLogIn";
 import { DropDownLogOut } from "../Elements/DropDownLogOut";
 
 
 export const Header = () => {
 
   const [mode, setMode] = useState(JSON.parse(localStorage.getItem("darkMode")) || false);
-
   const [search, setSearchSection] = useState(false);
-
   const [dropDown, setDropDown] = useState(false);
+
+  const token = JSON.parse(sessionStorage.getItem("token"));
 
 
   useEffect(() => { 
@@ -42,7 +42,7 @@ export const Header = () => {
                     </span>                    
                   </Link>
                   <span onClick={() => setDropDown(!dropDown)} className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-person-circle"></span>
-                  { dropDown && <DropDownLogOut />}
+                  { dropDown && ( token ? <DropDownLogIn dropdownControl={setDropDown} /> : <DropDownLogOut dropdownControl={setDropDown} /> )}
               </div>
           </div>
       </nav>
