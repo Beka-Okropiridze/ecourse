@@ -4,6 +4,7 @@ import Logo from '../../logo/Logo.png';
 import { Search } from "../Sections/Search";
 import { DropDownLogIn } from "../Elements/DropDownLogIn";
 import { DropDownLogOut } from "../Elements/DropDownLogOut";
+import { useCart } from "../../context";
 
 
 export const Header = () => {
@@ -11,6 +12,7 @@ export const Header = () => {
   const [mode, setMode] = useState(JSON.parse(localStorage.getItem("darkMode")) || false);
   const [search, setSearchSection] = useState(false);
   const [dropDown, setDropDown] = useState(false);
+  const { cartList } = useCart();
 
   const token = JSON.parse(sessionStorage.getItem("token"));
 
@@ -38,7 +40,7 @@ export const Header = () => {
                   <span onClick={() => setSearchSection(!search)}  className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-search"></span>
                   <Link to="/cart" className="text-gray-700 dark:text-white mr-5">
                     <span className="text-2xl bi bi-cart-fill relative">
-                      <span className="text-white text-sm absolute -top-1 left-2.5 bg-rose-500 px-1 rounded-full ">0</span>
+                      <span className="text-white text-sm absolute -top-1 left-2.5 bg-rose-500 px-1 rounded-full ">{cartList.length}</span>
                     </span>                    
                   </Link>
                   <span onClick={() => setDropDown(!dropDown)} className="cursor-pointer text-xl text-gray-700 dark:text-white mr-5 bi bi-person-circle"></span>

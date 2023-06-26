@@ -25,7 +25,6 @@ export const filterReducer = (state, action) => {
                     sortBy: null,
                     rating: null
                 }
-
         default:
             throw new Error("No Case Found")
     }

@@ -1,9 +1,25 @@
 import { Link } from "react-router-dom";
 import { Raiting } from "./Raiting";
+import { useCart } from "../../context";
+import { useState, useEffect } from "react";
+
 
 export const ProductCard = ({product}) => {
 
     const {id, name, price, poster, overview, rating, best_seller} = product
+    const { addToCart, removeFromCart, cartList} = useCart();
+    const [isInCart, setIsInCart] = useState(false);
+
+    useEffect(() => { 
+        const productsInCart = cartList.find(item => item.id === id)
+
+        if(productsInCart) { 
+            setIsInCart(true)
+        } else { 
+            setIsInCart(false)
+        }
+    }, [cartList, id])
+
 
   return (
     <div className=" max-w-xs mt-4 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -27,10 +43,10 @@ export const ProductCard = ({product}) => {
                 <span className="text-2xl dark:text-gray-200">
                     <span>$</span><span>{price}</span>
                 </span>
-                <button className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">Add To Cart <i className="ml-1 bi bi-plus-lg"></i></button>
-                {/* <button className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800">Remove Item <i className="ml-1 bi bi-trash3"></i></button> */}
+                {!isInCart && <button onClick={() => addToCart(product)} className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800">Add To Cart <i className="ml-1 bi bi-plus-lg"></i></button>}
+                {isInCart && <button onClick={() => removeFromCart(product)} className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800">Remove Item <i className="ml-1 bi bi-trash3"></i></button>}
             </p>
         </div>
     </div>
   )
-}
+};
