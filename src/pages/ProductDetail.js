@@ -10,8 +10,9 @@ export const ProductDetail = ({title}) => {
 
     useTitle(title)
     const [product, setProduct] = useState({});
+    const [isInCart, setIsInCart] = useState(false);
     const params = useParams();
-    const {addToCart, removeFromCart} = useCart();
+    const {addToCart, removeFromCart, cartList} = useCart();
 
     useEffect(() => { 
         async function fetchProduct () { 
@@ -22,6 +23,15 @@ export const ProductDetail = ({title}) => {
         fetchProduct()
     }, [params.id])
 
+    useEffect(() => { 
+      const productInCart = cartList.find(pro => pro.id === product.id);
+
+      if(productInCart) { 
+        setIsInCart(true)
+      } else { 
+        setIsInCart(false)
+      }
+    }, [cartList, product.id])
   
     return (
       <main>
@@ -49,14 +59,14 @@ export const ProductDetail = ({title}) => {
                   <span className="font-semibold text-blue-500 border bg-slate-100 rounded-lg px-3 py-1 mr-2">{product.size} MB</span>
                 </p>
                 <p className="my-3">
-                  <button onClick={() => addToCart(product)} className={`inline-flex items-center py-2 px-5 text-lg font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 ${product.in_stock ? "" : "cursor-not-allowed"}`}
-                          disabled={product.in_stock ? "" : "disabled"}>
-                            Add To Cart <i className="ml-1 bi bi-plus-lg"></i>
-                  </button>
-                  <button onClick={() => removeFromCart(product)} className={`inline-flex items-center py-2 px-5 text-lg font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 ${product.in_stock ? "" : "cursor-not-allowed"}`}  
-                          disabled={ product.in_stock ? "" : "disabled" }>
-                            Remove Item <i className="ml-1 bi bi-trash3"></i>
-                  </button>
+                  {!isInCart && <button onClick={() => addToCart(product)} className={`inline-flex items-center py-2 px-5 text-lg font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 ${product.in_stock ? "" : "cursor-not-allowed"}`}
+                                        disabled={product.in_stock ? "" : "disabled"}>
+                                        Add To Cart <i className="ml-1 bi bi-plus-lg"></i>
+                                </button>}
+                  {isInCart &&  <button onClick={() => removeFromCart(product)} className={`inline-flex items-center py-2 px-5 text-lg font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 ${product.in_stock ? "" : "cursor-not-allowed"}`}  
+                                        disabled={ product.in_stock ? "" : "disabled" }>
+                                        Remove Item <i className="ml-1 bi bi-trash3"></i>
+                                </button>}
                 </p>
                 <p className="text-lg text-gray-900 dark:text-slate-200">
                   {product.long_description}
