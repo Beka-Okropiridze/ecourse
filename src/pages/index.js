@@ -9,3 +9,5 @@ export { OrderPage } from './Order/OrderPage';
 
 export { CartPage } from './Cart/CartPage';
 
+export { DashboardPage } from './Dashboard/DashboardPage0;'
+
