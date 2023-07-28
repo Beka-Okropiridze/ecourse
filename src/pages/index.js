@@ -9,5 +9,7 @@ export { OrderPage } from './Order/OrderPage';
 
 export { CartPage } from './Cart/CartPage';
 
-export { DashboardPage } from './Dashboard/DashboardPage0;'
+export { DashboardPage } from './Dashboard/DashboardPage';
+export { DashboardCard } from './Dashboard/dashboardcomponents/DashboardCard';
+export { DashboardEmpty } from './Dashboard/dashboardcomponents/DashboardEmpty';
 

@@ -1,10 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import { CartPage, HomePage, ProductList } from '../pages';
 import { OrderPage } from '../pages/Order/OrderPage';
-import { ProductDetail } from '../pages';
-import { Register } from '../pages';
-import { Login } from '../pages';
+import { ProductDetail, Register, Login, DashboardPage } from '../pages';
 import { ProtectedRoutes } from './ProtectedRoutes';
+
 
 export const AllRoutes = () => {
   return (
@@ -16,6 +15,7 @@ export const AllRoutes = () => {
 
         <Route path='cart' element={<ProtectedRoutes> <CartPage /> </ProtectedRoutes>} />
         <Route path='order-summary' element={<ProtectedRoutes> <OrderPage /> </ProtectedRoutes>}/>
+        <Route path='dashboard' element={<ProtectedRoutes> <DashboardPage /> </ProtectedRoutes>} />
 
         <Route path='register' element={<Register />} />
         <Route path='login' element={<Login />} />
