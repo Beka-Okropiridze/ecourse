@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
 export const OrderPage = () => {
 
     const { state } = useLocation();
+    // console.log(state.status);
 
   return (
     <main>

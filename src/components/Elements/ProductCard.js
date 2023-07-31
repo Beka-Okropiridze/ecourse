@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 export const ProductCard = ({product}) => {
 
-    const {id, name, price, poster, overview, rating, best_seller} = product
+    const {id, name, price, poster, overview, rating, best_seller} = product;
     const { addToCart, removeFromCart, cartList} = useCart();
     const [isInCart, setIsInCart] = useState(false);
 
