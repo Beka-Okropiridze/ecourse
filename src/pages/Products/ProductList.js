@@ -4,6 +4,7 @@ import { ProductCard } from "../../components";
 import { FilterBar } from "./productscomponents/FilterBar";
 import { useTitle } from "../../hooks/useTitle";
 import { useFilter } from "../../context";
+import { getProducts } from "../../services";
 
 export const ProductList = ({title}) => {
 
@@ -20,8 +21,7 @@ export const ProductList = ({title}) => {
 
   useEffect(() => { 
     async function fetchProducts () { 
-      const response = await fetch(`http://localhost:8000/products?name_like=${searchTerm ? searchTerm : ''}`)
-      const data = await response.json()
+      const data = await getProducts(searchTerm)
       initialProductList(data)
     }
     fetchProducts()

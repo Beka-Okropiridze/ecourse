@@ -1,4 +1,5 @@
 { 
+    "featured_products*": "/444/",
     "/users*": "/600/",
     "/orders*": "/660"
 }

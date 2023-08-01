@@ -1,11 +1,13 @@
 import { CartList } from "./cartcomponents/CartList";
 import { CartEmpty } from "./cartcomponents/CartEmpty";
 import { useCart } from "../../context";
+import { useTitle } from "../../hooks/useTitle";
 
 
 
-export const CartPage = () => {
+export const CartPage = ({title}) => {
   
+  useTitle(title)
   const { cartList } = useCart();
 
 

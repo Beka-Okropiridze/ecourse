@@ -13,7 +13,7 @@ export const AllRoutes = () => {
         <Route path='products' element={<ProductList title='All eBooks' />} />
         <Route path='products/:id' element={<ProductDetail title='About eBook' />} />
 
-        <Route path='cart' element={<ProtectedRoutes> <CartPage /> </ProtectedRoutes>} />
+        <Route path='cart' element={<ProtectedRoutes> <CartPage title="Purchase" /> </ProtectedRoutes>} />
         <Route path='order-summary' element={<ProtectedRoutes> <OrderPage /> </ProtectedRoutes>}/>
         <Route path='dashboard' element={<ProtectedRoutes> <DashboardPage /> </ProtectedRoutes>} />
 
