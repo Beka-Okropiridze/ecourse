@@ -13,3 +13,5 @@ export { DashboardPage } from './Dashboard/DashboardPage';
 export { DashboardCard } from './Dashboard/dashboardcomponents/DashboardCard';
 export { DashboardEmpty } from './Dashboard/dashboardcomponents/DashboardEmpty';
 
+export { PageNotFound } from './PageNotFound';
+
