@@ -3,6 +3,7 @@ import { useTitle } from "../../hooks/useTitle";
 import { DashboardCard } from "./dashboardcomponents/DashboardCard";
 import { DashboardEmpty } from "./dashboardcomponents/DashboardEmpty";
 import { getUserOrders } from "../../services";
+import { toast } from "react-toastify";
 
 
 export const DashboardPage = ({title}) => {
@@ -12,8 +13,12 @@ export const DashboardPage = ({title}) => {
 
   useEffect(() => { 
     async function fetchOrders() { 
-      const data = await getUserOrders()
-      setOrders(data)
+      try { 
+        const data = await getUserOrders()
+        setOrders(data)
+      } catch(err){
+        toast.error(err.message)
+      }
     }
     fetchOrders()
     console.log("orders",orders);

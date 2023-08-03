@@ -26,10 +26,14 @@ export const ProductList = ({title}) => {
         const data = await getProducts(searchTerm)
         initialProductList(data)
       }
-      catch (err) {
-        toast.error(err.message) 
-      }
-    }
+      catch (error) {
+        toast.error(error.message, { 
+          closeButton: true, 
+          position: "bottom-right",
+          closeOnClick: true
+        })
+      } 
+    } 
     fetchProducts()
   }, [searchTerm])
 

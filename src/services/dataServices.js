@@ -17,9 +17,13 @@ export async function getUsers () {
                 method: "GET",
                 headers: { "Content-Type": "application/json", Authorization: `Bearer ${browserData.token}` },
             });
-            const data = await response.json();
+        if(!response.ok){ 
+            throw {message: response.statusText, status: response.status}
+        }
 
-            return data
+    const data = await response.json();
+
+    return data
 };
 
 
@@ -31,6 +35,10 @@ export async function getUserOrders () {
         method: "GET",
         headers: {"Content-Type": "application/json", Authorization: `Bearer ${browserData.token}`}
       });
+
+      if(!response.ok){ 
+        throw {message: response.statusText, status: response.status}
+    }
       const data = await response.json();
 
       return data
@@ -56,6 +64,11 @@ export async function createUserOrders (total,cartList,user) {
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${browserData.token}` },
         body: JSON.stringify(order)
     })
+
+    if(!response.ok){ 
+        throw {message: response.statusText, status: response.status}
+    }
+    
     const data = await response.json();
 
     return data

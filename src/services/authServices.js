@@ -7,6 +7,9 @@ export async function login(userDetails) {
         body: JSON.stringify(userDetails)
     });
 
+    if(!response.ok){ 
+        throw {message: response.statusText, status: response.status}
+    }
     const data = await response.json();
     console.log(data);
     
@@ -25,6 +28,10 @@ export async function register(authDetail) {
             headers: {"content-Type": "application/json"},
             body: JSON.stringify(authDetail)
         });
+
+        if(!response.ok){ 
+            throw {message: response.statusText, status: response.status}
+        }
 
         const data = await response.json();
         

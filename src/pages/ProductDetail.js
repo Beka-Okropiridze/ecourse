@@ -4,6 +4,7 @@ import { Raiting } from "../components";
 import { useTitle } from "../hooks/useTitle";
 import { useCart } from "../context";
 import { getProductDetails } from "../services";
+import { toast } from "react-toastify";
 
 
 
@@ -17,8 +18,12 @@ export const ProductDetail = ({title}) => {
 
     useEffect(() => { 
         async function fetchProduct () { 
-            const data = getProductDetails(params)
+          try {
+            const data = await getProductDetails(params)
             setProduct(data)
+          } catch(err){ 
+            toast.error(`${err.status} Product not found`)
+          }
         }
         fetchProduct()
     }, [params.id])
