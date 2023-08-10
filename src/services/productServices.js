@@ -2,7 +2,7 @@
 
 export async function getFeatureProducts() { 
 
-        const response = await fetch("http://localhost:8000/444/featured_products")
+        const response = await fetch(`${process.env.REACT_APP_HOST}/444/featured_products`)
          if(!response.ok) { 
             throw {message: response.statusText, status: response.status}
         }
@@ -14,7 +14,7 @@ export async function getFeatureProducts() {
 
 export async function getProducts(searchTerm) { 
 
-    const response = await fetch(`http://localhost:8000/444/products?name_like=${searchTerm ? searchTerm : ''}`)
+    const response = await fetch(`${process.env.REACT_APP_HOST}/444/products?name_like=${searchTerm ? searchTerm : ''}`)
      if(!response.ok) { 
         throw {message: response.statusText, status: response.status}
     }
@@ -25,7 +25,7 @@ export async function getProducts(searchTerm) {
 
 export async function getProductDetails(params) { 
 
-    const response = await fetch(`http://localhost:8000/444/products/${params.id}`);
+    const response = await fetch(`${process.env.REACT_APP_HOST}/444/products/${params.id}`);
      if(!response.ok) { 
         throw {message: response.statusText, status: response.status}
     }

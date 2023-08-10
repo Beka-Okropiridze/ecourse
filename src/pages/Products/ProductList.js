@@ -35,7 +35,7 @@ export const ProductList = ({title}) => {
       } 
     } 
     fetchProducts()
-  }, [searchTerm])
+  }, [searchTerm]) //eslint-disable-line
 
   return (
     <main>

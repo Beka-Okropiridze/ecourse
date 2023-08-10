@@ -241,16 +241,16 @@
     {
       "cartList": [
         {
-          "id": 10004,
-          "name": "The Complete Guide to Backend Development",
+          "id": 10001,
+          "name": "Basics To Advanced In React",
           "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
           "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 99,
-          "poster": "https://images.unsplash.com/photo-1595617795501-9661aafda72a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10004.avif",
+          "price": 29,
+          "poster": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
+          "image_local": "/assets/images/10001.avif",
           "rating": 5,
           "in_stock": true,
-          "size": 7,
+          "size": 5,
           "best_seller": true
         },
         {
@@ -265,332 +265,24 @@
           "in_stock": true,
           "size": 10,
           "best_seller": false
-        },
-        {
-          "id": 10008,
-          "name": "JavaScript Basics To Advance With Shubham",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 29,
-          "poster": "https://images.unsplash.com/photo-1613490900233-141c5560d75d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10008.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 3,
-          "best_seller": true
         }
       ],
-      "amount_paid": 227,
-      "quantity": 3,
+      "amount_paid": 128,
+      "quantity": 2,
       "user": {
-        "name": "Alex T",
-        "email": "alex@example.com",
-        "id": 3
+        "name": "BEKA",
+        "email": "beqa.oqropiridze@gmail.com",
+        "id": 1
       },
       "id": 1
-    },
-    {
-      "cartList": [
-        {
-          "id": 10001,
-          "name": "Basics To Advanced In React",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 29,
-          "poster": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10001.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 5,
-          "best_seller": true
-        },
-        {
-          "id": 10002,
-          "name": "Django Framework for Beginners",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 19,
-          "poster": "https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10002.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 2,
-          "best_seller": false
-        }
-      ],
-      "amount_paid": 48,
-      "quantity": 2,
-      "user": {
-        "name": "Shubham",
-        "email": "shubham@example.com",
-        "id": 1
-      },
-      "id": 2
-    },
-    {
-      "cartList": [
-        {
-          "id": 10004,
-          "name": "The Complete Guide to Backend Development",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 99,
-          "poster": "https://images.unsplash.com/photo-1595617795501-9661aafda72a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10004.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 7,
-          "best_seller": true
-        }
-      ],
-      "amount_paid": 99,
-      "quantity": 1,
-      "user": {
-        "name": "Shubham",
-        "email": "shubham@example.com",
-        "id": 1
-      },
-      "id": 3
-    },
-    {
-      "cartList": [
-        {
-          "id": 10004,
-          "name": "The Complete Guide to Backend Development",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 99,
-          "poster": "https://images.unsplash.com/photo-1595617795501-9661aafda72a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10004.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 7,
-          "best_seller": true
-        }
-      ],
-      "amount_paid": 99,
-      "quantity": 1,
-      "user": {
-        "name": "Shubham",
-        "email": "shubham@example.com",
-        "id": 1
-      },
-      "id": 4
-    },
-    {
-      "cartList": [
-        {
-          "id": 10001,
-          "name": "Basics To Advanced In React",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 29,
-          "poster": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10001.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 5,
-          "best_seller": true
-        }
-      ],
-      "amount_paid": 29,
-      "quantity": 1,
-      "user": {
-        "name": "Shubham",
-        "email": "shubham@example.com",
-        "id": 1
-      },
-      "id": 5
-    },
-    {
-      "cartList": [
-        {
-          "id": 10001,
-          "name": "Basics To Advanced In React",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 29,
-          "poster": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10001.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 5,
-          "best_seller": true
-        },
-        {
-          "id": 10002,
-          "name": "Django Framework for Beginners",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 19,
-          "poster": "https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10002.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 2,
-          "best_seller": false
-        }
-      ],
-      "amount_paid": 48,
-      "quantity": 2,
-      "user": {
-        "name": "kaxa",
-        "email": "eve.holt@reqres.in",
-        "id": 5
-      },
-      "id": 6
-    },
-    {
-      "cartList": [
-        {
-          "id": 10001,
-          "name": "Basics To Advanced In React",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 29,
-          "poster": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10001.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 5,
-          "best_seller": true
-        }
-      ],
-      "amount_paid": 29,
-      "quantity": 1,
-      "user": {
-        "name": "kaxa",
-        "email": "eve.holt@reqres.in",
-        "id": 5
-      },
-      "id": 7
-    },
-    {
-      "cartList": [
-        {
-          "id": 10001,
-          "name": "Basics To Advanced In React",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 29,
-          "poster": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10001.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 5,
-          "best_seller": true
-        },
-        {
-          "id": 10002,
-          "name": "Django Framework for Beginners",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 19,
-          "poster": "https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10002.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 2,
-          "best_seller": false
-        }
-      ],
-      "amount_paid": 48,
-      "quantity": 2,
-      "user": {
-        "name": "kaxa",
-        "email": "eve.holt@reqres.in",
-        "id": 5
-      },
-      "id": 8
-    },
-    {
-      "cartList": [
-        {
-          "id": 10004,
-          "name": "The Complete Guide to Backend Development",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 99,
-          "poster": "https://images.unsplash.com/photo-1595617795501-9661aafda72a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10004.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 7,
-          "best_seller": true
-        },
-        {
-          "id": 10006,
-          "name": "Frontend Fastlane Plan With Projects",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 99,
-          "poster": "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10006.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 10,
-          "best_seller": false
-        },
-        {
-          "id": 10008,
-          "name": "JavaScript Basics To Advance With Shubham",
-          "overview": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.",
-          "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta aut, vel ipsum maxime quam quia, quaerat tempore minus odio exercitationem illum et eos, quas ipsa aperiam magnam officiis libero expedita quo voluptas deleniti sit dolore? Praesentium tempora cumque facere consectetur quia, molestiae quam, accusamus eius corrupti laudantium aliquid! Tempore laudantium unde labore voluptates repellat, dignissimos aperiam ad ipsum laborum recusandae voluptatem non dolore. Reiciendis cum quo illum. Dolorem, molestiae corporis.",
-          "price": 29,
-          "poster": "https://images.unsplash.com/photo-1613490900233-141c5560d75d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=650&q=40",
-          "image_local": "/assets/images/10008.avif",
-          "rating": 5,
-          "in_stock": true,
-          "size": 3,
-          "best_seller": true
-        }
-      ],
-      "amount_paid": 227,
-      "quantity": 3,
-      "user": {
-        "name": "kaxa",
-        "email": "eve.holt@reqres.in",
-        "id": 5
-      },
-      "id": 9
     }
   ],
   "users": [
     {
-      "email": "shubham@example.com",
-      "password": "$2a$10$jwZkkaP6gmxOGuGUtnRS1u/SLjaFChpjGI4lTNp8FxkYmrY/JgLjO",
-      "name": "Shubham",
+      "email": "beqa.oqropiridze@gmail.com",
+      "password": "$2a$10$MdnzwAK3Jm7w.s8pKOKCSu0Rrpf3kQDwzeTii1KjMTKyDj6tzX1.C",
+      "name": "BEKA",
       "id": 1
-    },
-    {
-      "email": "shubham@gmail.com",
-      "password": "$2a$10$dXSd9HPDmszaTiKJ5iB4K.IXuD5ejSi2GlBJNvAXRtMgmGhSLwIQK",
-      "name": "Shubham",
-      "id": 2
-    },
-    {
-      "email": "alex@example.com",
-      "password": "$2a$10$EAegJLvG5i3K.lPc9hMILua.sPTawvjUE1F3xO.3CMTml6vHRyvFm",
-      "name": "Alex T",
-      "id": 3
-    },
-    {
-      "email": "beqa.oqropiridze@yahoo.com",
-      "password": "$2a$10$R2G8epPSldCQe82AZoitLO7t8QJerHYLc2aifEvx5KUDMfN6XTtwC",
-      "name": "beqa",
-      "id": 4
-    },
-    {
-      "email": "eve.holt@reqres.in",
-      "password": "$2a$10$..Mb1SjFHZiH7pLzqKePle4h.C2r61atZQEo6Ct54rVtMcE/YIlr2",
-      "name": "kaxa",
-      "id": 5
-    },
-    {
-      "email": "beqa.oqropiridze1994@gmail.com",
-      "password": "$2a$10$2WuIAdMWJAIvJutbb8fLnuiDvgFhauA93TMPGg8hPVQVcGETNsw82",
-      "name": "beka",
-      "id": 6
     }
   ]
 }

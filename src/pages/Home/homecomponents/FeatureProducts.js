@@ -32,5 +32,4 @@ export const FeatureProducts = () => {
         </div> 
     </section>
   )
-}
-//
+};
