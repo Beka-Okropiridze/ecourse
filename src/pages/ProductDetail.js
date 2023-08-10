@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
-import { Raiting } from "../components";
 import { useTitle } from "../hooks/useTitle";
 import { useCart } from "../context";
+import { Raiting } from "../components";
 import { getProductDetails } from "../services";
 import { toast } from "react-toastify";
 
