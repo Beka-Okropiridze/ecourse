@@ -8,7 +8,7 @@ export async function login(userDetails) {
     });
 
     if(!response.ok){ 
-        throw {message: response.statusText, status: response.status}
+        throw {message: response.statusText, status: response.status} //eslint-disable-line
     }
     const data = await response.json();
     console.log(data);
@@ -30,7 +30,7 @@ export async function register(authDetail) {
         });
 
         if(!response.ok){ 
-            throw {message: response.statusText, status: response.status}
+            throw {message: response.statusText, status: response.status} //eslint-disable-line
         }
 
         const data = await response.json();
