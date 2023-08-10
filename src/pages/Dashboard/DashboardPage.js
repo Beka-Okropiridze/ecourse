@@ -22,7 +22,7 @@ export const DashboardPage = ({title}) => {
     }
     fetchOrders()
     console.log("orders",orders);
-  }, [])
+  }, []) //eslint-disable-line
 
   return (
     <main>
