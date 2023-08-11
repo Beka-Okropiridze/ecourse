@@ -28,8 +28,8 @@ export const Login = () => {
 
   async function handleGuestLogin() { 
     
-      email.current.value = "beqa.oqropiridze@gmail.com",
-      password.current.value = "12345678" 
+      email.current.value = process.env.REACT_APP_GUEST_LOGIN
+      password.current.value = process.env.REACT_APP_GUEST_PASSWORD
 
     try{
       const userDetails = { 
@@ -38,7 +38,7 @@ export const Login = () => {
       };
       const data = await login(userDetails)
       data.accessToken ? navigate("/products") : toast.error(data)
-    } catch(error) { 
+    } catch(err) { 
       toast.error(err.status)
     }
   }
