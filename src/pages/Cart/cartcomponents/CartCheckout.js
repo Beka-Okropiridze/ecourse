@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { useCart } from "../../../context";
 import { createUserOrders, getUsers } from "../../../services";
-import { toast } from "react-toastify";
 
 export const Checkout = ({ checkoutHide }) => {
 
