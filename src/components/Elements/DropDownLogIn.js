@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { logout, getUsers } from "../../services";
 import { toast } from "react-toastify";
+import { logout, getUsers } from "../../services";
 
 export const DropDownLogIn = ({dropdownControl}) => {
 
